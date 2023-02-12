@@ -1,6 +1,6 @@
 export default class Accordion {
   constructor(list) {
-    this.accordionList = document.querySelectorAll(list)
+    this.accordionList = document.querySelectorAll(list);
     this.activeClass = "ativo";
   }
 
@@ -18,7 +18,8 @@ export default class Accordion {
   init() {
     if (this.accordionList.length) {
       this.toggleAccordion(this.accordionList[0]);
-      this.addAccordionEvent()
+      this.addAccordionEvent();
     }
+    return this;
   }
 }
